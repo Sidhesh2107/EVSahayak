@@ -1,4 +1,4 @@
-package com.mapbox.storelocator.util;
+package com.mapbox.evsahayak.util;
 
 /**
  * Class for constant Strings used in the project

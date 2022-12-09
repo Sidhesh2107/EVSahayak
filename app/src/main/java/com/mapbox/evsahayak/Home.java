@@ -1,11 +1,9 @@
-package com.mapbox.storelocator;
+package com.mapbox.evsahayak;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-
-import com.mapbox.storelocator.activity.MapActivity;
 
 import java.util.Timer;
 import java.util.TimerTask;

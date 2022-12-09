@@ -1,4 +1,4 @@
-package com.mapbox.storelocator.util;
+package com.mapbox.evsahayak.util;
 
 import android.content.Context;
 import android.graphics.PointF;

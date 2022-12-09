@@ -1,4 +1,4 @@
-package com.mapbox.storelocator.activity;
+package com.mapbox.evsahayak.activity;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -42,10 +42,10 @@ import com.mapbox.mapboxsdk.plugins.building.BuildingPlugin;
 import com.mapbox.mapboxsdk.style.layers.LineLayer;
 import com.mapbox.mapboxsdk.style.layers.SymbolLayer;
 import com.mapbox.mapboxsdk.style.sources.GeoJsonSource;
-import com.mapbox.storelocator.R;
-import com.mapbox.storelocator.adapter.LocationRecyclerViewAdapter;
-import com.mapbox.storelocator.model.IndividualLocation;
-import com.mapbox.storelocator.util.LinearLayoutManagerWithSmoothScroller;
+import com.mapbox.evsahayak.R;
+import com.mapbox.evsahayak.adapter.LocationRecyclerViewAdapter;
+import com.mapbox.evsahayak.model.IndividualLocation;
+import com.mapbox.evsahayak.util.LinearLayoutManagerWithSmoothScroller;
 import com.mapbox.turf.TurfConstants;
 import com.mapbox.turf.TurfConversion;
 
@@ -68,7 +68,7 @@ import static com.mapbox.mapboxsdk.style.layers.PropertyFactory.iconIgnorePlacem
 import static com.mapbox.mapboxsdk.style.layers.PropertyFactory.iconImage;
 import static com.mapbox.mapboxsdk.style.layers.PropertyFactory.lineColor;
 import static com.mapbox.mapboxsdk.style.layers.PropertyFactory.lineWidth;
-import static com.mapbox.storelocator.util.StringConstants.SELECTED_THEME;
+import static com.mapbox.evsahayak.util.StringConstants.SELECTED_THEME;
 
 /**
  * Activity with a Mapbox map and recyclerview to view various locations
@@ -645,7 +645,7 @@ public class MapActivity extends AppCompatActivity implements
         case R.style.AppTheme_Purple:
           mapStyle = getString(R.string.purple_map_style);
           navigationLineColor = getResources().getColor(R.color.navigationRouteLine_purple);
-          unselectedMarkerIcon = BitmapFactory.decodeResource(context.getResources(), R.drawable.purple_unselected_burger);
+          unselectedMarkerIcon = BitmapFactory.decodeResource(context.getResources(), R.drawable.revolt_icon);
           selectedMarkerIcon = BitmapFactory.decodeResource(context.getResources(), R.drawable.purple_selected_burger);
           mockLocationIcon = BitmapFactory.decodeResource(context.getResources(), R.drawable.purple_user_location);
           break;
@@ -666,8 +666,8 @@ public class MapActivity extends AppCompatActivity implements
         case R.style.AppTheme_Gray:
           mapStyle = Style.LIGHT;
           navigationLineColor = getResources().getColor(R.color.navigationRouteLine_gray);
-          unselectedMarkerIcon = BitmapFactory.decodeResource(context.getResources(), R.drawable.white_unselected_bike);
-          selectedMarkerIcon = BitmapFactory.decodeResource(context.getResources(), R.drawable.gray_selected_bike);
+          unselectedMarkerIcon = BitmapFactory.decodeResource(context.getResources(), R.drawable.revolt_icon);
+          selectedMarkerIcon = BitmapFactory.decodeResource(context.getResources(), R.drawable.revolt_icon);
           mockLocationIcon = BitmapFactory.decodeResource(context.getResources(), R.drawable.gray_user_location);
           break;
       }

@@ -1,4 +1,4 @@
-package com.mapbox.storelocator;
+package com.mapbox.evsahayak;
 
 import org.junit.Test;
 

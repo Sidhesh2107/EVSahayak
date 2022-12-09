@@ -36,10 +36,10 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Location 3",
+        "name": "Revolt",
         "hours": "10am - 8pm",
         "phone": "(555) 555-4839",
-        "description": "Location #3 description"
+        "description": "SB Road"
       },
       "geometry": {
         "type": "Point",

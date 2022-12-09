@@ -1,4 +1,4 @@
-package com.mapbox.storelocator;
+package com.mapbox.evsahayak;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.google.firebase.auth.FirebaseAuth;
-import com.mapbox.storelocator.activity.MapActivity;
+import com.mapbox.evsahayak.activity.MapActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         charging.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, MapActivity.class);
+                Intent intent = new Intent(MainActivity.this, Charging.class);
 
                 startActivity(intent);
                 finish();

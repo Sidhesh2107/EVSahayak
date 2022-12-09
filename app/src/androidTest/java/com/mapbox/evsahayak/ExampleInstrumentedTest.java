@@ -1,4 +1,4 @@
-package com.mapbox.storelocator;
+package com.mapbox.evsahayak;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

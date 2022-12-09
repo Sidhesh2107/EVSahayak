@@ -1,4 +1,4 @@
-package com.mapbox.storelocator;
+package com.mapbox.evsahayak;
 
 import android.content.Intent;
 import android.os.Bundle;

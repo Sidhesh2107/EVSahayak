@@ -1,4 +1,4 @@
-package com.mapbox.storelocator.activity;
+package com.mapbox.evsahayak.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,9 +8,9 @@ import android.widget.ImageButton;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.mapbox.storelocator.R;
+import com.mapbox.evsahayak.R;
 
-import static com.mapbox.storelocator.util.StringConstants.SELECTED_THEME;
+import static com.mapbox.evsahayak.util.StringConstants.SELECTED_THEME;
 
 /**
  * Activity for picking the specific map theme to view

@@ -1,4 +1,4 @@
-package com.mapbox.storelocator.adapter;
+package com.mapbox.evsahayak.adapter;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -13,8 +13,8 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.content.res.ResourcesCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.mapbox.storelocator.R;
-import com.mapbox.storelocator.model.IndividualLocation;
+import com.mapbox.evsahayak.R;
+import com.mapbox.evsahayak.model.IndividualLocation;
 
 import java.util.List;
 

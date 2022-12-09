@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:463522084526:android:4e5fdfc17b9346e8351f3f",
+        "mobilesdk_app_id": "1:463522084526:android:d230f2b12069e9d8351f3f",
         "android_client_info": {
-          "package_name": "com.mapbox.storefinder"
+          "package_name": "com.mapbox.evsahayak"
         }
       },
       "oauth_client": [

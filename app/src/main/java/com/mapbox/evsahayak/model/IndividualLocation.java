@@ -1,4 +1,4 @@
-package com.mapbox.storelocator.model;
+package com.mapbox.evsahayak.model;
 
 import com.mapbox.mapboxsdk.geometry.LatLng;
 
