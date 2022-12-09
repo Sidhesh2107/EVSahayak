@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/walpaper"
+    tools:context=".MainActivity">
+
+    <!--ListView for displaying
+        our list of courses-->
+    <ImageView
+        android:id="@+id/back_parts"
+        android:layout_width="68dp"
+        android:layout_height="58dp"
+        app:srcCompat="@drawable/back" />
+
+    <ListView
+
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/walpaper"
+        android:gravity="center_horizontal"
+        android:translationY="75dp">
+
+
+    </ListView>
+
+
+</RelativeLayout>

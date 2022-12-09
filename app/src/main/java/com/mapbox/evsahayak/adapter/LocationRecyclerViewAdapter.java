@@ -88,7 +88,7 @@ public class LocationRecyclerViewAdapter extends
           .41f);
         break;
       case R.style.AppTheme_Purple:
-        emojiForCircle = ResourcesCompat.getDrawable(context.getResources(), R.drawable.cheese_burger_icon, null);
+        emojiForCircle = ResourcesCompat.getDrawable(context.getResources(), R.drawable.car_icon, null);
         backgroundCircle = ResourcesCompat.getDrawable(context.getResources(), R.drawable.purple_circle, null);
         setColors(R.color.colorPrimaryDark_purple, R.color.white, R.color.white, R.color.cardHourAndPhoneTextColor_purple,
           R.color.cardHourAndPhoneTextColor_purple, R.color.cardHourAndPhoneTextColor_purple,
@@ -119,8 +119,8 @@ public class LocationRecyclerViewAdapter extends
           .37f);
         break;
       case R.style.AppTheme_Gray:
-        emojiForCircle = ResourcesCompat.getDrawable(context.getResources(), R.drawable.bicycle_icon, null);
-        backgroundCircle = ResourcesCompat.getDrawable(context.getResources(), R.drawable.gray_circle, null);
+        emojiForCircle = ResourcesCompat.getDrawable(context.getResources(), R.drawable.car_icon, null);
+//        backgroundCircle = ResourcesCompat.getDrawable(context.getResources(), R.drawable.gray_circle, null);
         setColors(R.color.colorPrimaryDark_gray, R.color.white, R.color.white, R.color.cardHourAndPhoneTextColor_gray,
           R.color.cardHourAndPhoneTextColor_gray, R.color.cardHourAndPhoneTextColor_gray,
           R.color.cardHourAndPhoneTextColor_gray, R.color.white, R.color.white);

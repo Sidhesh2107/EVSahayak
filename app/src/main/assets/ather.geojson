@@ -1,0 +1,87 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ather",
+        "hours": "10am - 6pm",
+        "phone": "1234567890",
+        "description": "Nehru Stadium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.855255,
+          18.501510
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ather",
+        "hours": "9am - 4pm",
+        "phone": "9823525359",
+        "description": "Shankarrao Vidya Path"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.853740,
+          18.511284
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ather",
+        "hours": "10am - 8pm",
+        "phone": "9023491239",
+        "description": "Tilak Road"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.856961,
+          18.502592
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ather",
+        "hours": "9am - 8pm",
+        "phone": "982334521",
+        "description": "FIITJEE, Jagannath Shankarsheth Marg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+
+          73.862740,
+          18.499829
+
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ather",
+        "hours": "9:30am - 6pm",
+        "phone": "9923401230",
+        "description": "Market Yard"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.866958,
+          18.489022
+        ]
+      }
+    }
+  ]
+}

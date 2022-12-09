@@ -1,16 +1,20 @@
 package com.mapbox.evsahayak.activity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.PointF;
+import android.location.Location;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -21,10 +25,13 @@ import androidx.recyclerview.widget.LinearSnapHelper;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.SnapHelper;
 
+import com.mapbox.android.core.location.LocationEngine;
+import com.mapbox.android.core.permissions.PermissionsManager;
 import com.mapbox.api.directions.v5.DirectionsCriteria;
 import com.mapbox.api.directions.v5.MapboxDirections;
 import com.mapbox.api.directions.v5.models.DirectionsResponse;
 import com.mapbox.api.directions.v5.models.DirectionsRoute;
+import com.mapbox.evsahayak.Charging;
 import com.mapbox.geojson.Feature;
 import com.mapbox.geojson.FeatureCollection;
 import com.mapbox.geojson.LineString;
@@ -78,9 +85,9 @@ public class MapActivity extends AppCompatActivity implements
 
 
   private static final LatLngBounds LOCKED_MAP_CAMERA_BOUNDS = new LatLngBounds.Builder()
-    .include(new LatLng(17, 72))
-    .include(new LatLng(19,
-      74)).build();
+    .include(new LatLng(-90, -180))
+    .include(new LatLng(90,
+      180)).build();
   private static final LatLng MOCK_DEVICE_LOCATION_LAT_LNG = new LatLng(18.464099, 73.868411);
   private static final int MAPBOX_LOGO_OPACITY = 75;
   private static final int CAMERA_MOVEMENT_SPEED_IN_MILSECS = 1200;
@@ -98,22 +105,40 @@ public class MapActivity extends AppCompatActivity implements
   private LocationRecyclerViewAdapter styleRvAdapter;
   private int chosenTheme;
   private String TAG = "MapActivity";
+  private PermissionsManager permissionsManager;
+  private LocationEngine locationEngine;
+//  private LocationLayerPlugin locationLayerPlugin;
+  private Location originLocation;
+
+
+
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
+//    View back = findViewById(R.id.back);
 
     // Configure the Mapbox access token. Configuration can either be called in your application
     // class or in the same activity which contains the mapview.
     Mapbox.getInstance(this, getString(R.string.access_token));
 
     // Hide the status bar for the map to fill the entire screen
-    requestWindowFeature(Window.FEATURE_NO_TITLE);
-    this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+//    requestWindowFeature(Window.FEATURE_NO_TITLE);
+//    this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
     // Inflate the layout with the the MapView. Always inflate this after the Mapbox access token is configured.
     setContentView(R.layout.activity_map);
+  Button back = findViewById(R.id.back);
+    back.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+        Intent intent = new Intent(MapActivity.this, Charging.class);
 
+        startActivity(intent);
+        finish();
+
+      }
+    });
     // Create a GeoJSON feature collection from the GeoJSON file in the assets folder.
     try {
       getFeatureCollectionFromJson();
@@ -225,6 +250,8 @@ public class MapActivity extends AppCompatActivity implements
           }
 
         });
+
+
 
       }
     });
@@ -506,7 +533,7 @@ public class MapActivity extends AppCompatActivity implements
   private void getFeatureCollectionFromJson() throws IOException {
     try {
       // Use fromJson() method to convert the GeoJSON file into a usable FeatureCollection object
-      featureCollection = FeatureCollection.fromJson(loadGeoJsonFromAsset("list_of_locations.geojson"));
+      featureCollection = FeatureCollection.fromJson(loadGeoJsonFromAsset("revolt.geojson"));
 
     } catch (Exception exception) {
       Log.e("MapActivity", "getFeatureCollectionFromJson: " + exception);

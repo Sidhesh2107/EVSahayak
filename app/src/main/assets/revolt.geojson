@@ -1,0 +1,85 @@
+﻿{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Revolt",
+        "hours": "10am - 6pm",
+        "phone": "1234567890",
+        "description": "Senapati Bapat Road"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.82598,
+          18.527348
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Revolt",
+        "hours": "10am - 6pm",
+        "phone": "9823525359",
+        "description": "NIBM, Kondwa"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+         73.890299,
+          18.477766
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Revolt",
+        "hours": "10am - 8pm",
+        "phone": "9832493241",
+        "description": "Katraj"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.852184,
+          18.453429
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Revolt",
+        "hours": "8am - 5:30pm",
+        "phone": "903245891",
+        "description": "Market Yard"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+           73.866958,
+                    18.489022
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Revolt",
+        "hours": "9:30am - 6pm",
+        "phone": "902348173",
+        "description": "City Pride"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.862740,
+                    18.499829
+        ]
+      }
+    }
+  ]
+}

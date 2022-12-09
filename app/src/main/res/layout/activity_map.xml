@@ -13,16 +13,24 @@
         android:id="@+id/mapView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="0dp"
         android:layout_marginLeft="0dp"
-        android:layout_marginRight="0dp"
         android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
         mapbox:mapbox_cameraTargetLat="18.464099"
         mapbox:mapbox_cameraTargetLng="73.868411"
         mapbox:mapbox_cameraTilt="48"
         mapbox:mapbox_cameraZoom="12"
         mapbox:mapbox_cameraZoomMin="10"
-        mapbox:mapbox_uiAttribution="false"/>
+        mapbox:mapbox_uiAttribution="false">
+
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back" />
+    </com.mapbox.mapboxsdk.maps.MapView>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/map_layout_rv"

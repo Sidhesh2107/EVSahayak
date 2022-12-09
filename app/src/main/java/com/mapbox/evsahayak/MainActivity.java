@@ -3,6 +3,7 @@ package com.mapbox.evsahayak;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,8 +17,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button charging = findViewById(R.id.chargingStation);
-
+        View charging = findViewById(R.id.chargingStation);
+        View payment = findViewById(R.id.payment);
+        View parts = findViewById(R.id.parts);
+        View storage = (View) findViewById(R.id.storage);
         charging.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -28,6 +31,40 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+        payment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, payment.class);
+
+                startActivity(intent);
+                finish();
+
+            }
+        });
+
+        parts.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, parts.class);
+
+                startActivity(intent);
+                finish();
+
+            }
+        });
+
+        storage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, storage.class);
+
+                startActivity(intent);
+                finish();
+
+            }
+        });
+
 
 
     }
