@@ -18,7 +18,10 @@ public class Charging extends AppCompatActivity {
         setContentView(R.layout.activity_charging);
         Button revolt = findViewById(R.id.revolt);
         Button ather = findViewById(R.id.ather);
+<<<<<<< HEAD
         View back = findViewById(R.id.back_charging);
+=======
+>>>>>>> origin/master
         revolt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -41,6 +44,7 @@ public class Charging extends AppCompatActivity {
             }
         });
 
+<<<<<<< HEAD
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -52,6 +56,8 @@ public class Charging extends AppCompatActivity {
             }
         });
 
+=======
+>>>>>>> origin/master
 
 
     }
