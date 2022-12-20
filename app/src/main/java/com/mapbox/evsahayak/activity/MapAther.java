@@ -1,7 +1,10 @@
 package com.mapbox.evsahayak.activity;
 
 import android.content.Context;
+<<<<<<< HEAD
 import android.content.Intent;
+=======
+>>>>>>> origin/master
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
@@ -10,10 +13,15 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.util.Log;
+<<<<<<< HEAD
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+=======
+import android.view.Window;
+import android.view.WindowManager;
+>>>>>>> origin/master
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -28,7 +36,10 @@ import com.mapbox.api.directions.v5.DirectionsCriteria;
 import com.mapbox.api.directions.v5.MapboxDirections;
 import com.mapbox.api.directions.v5.models.DirectionsResponse;
 import com.mapbox.api.directions.v5.models.DirectionsRoute;
+<<<<<<< HEAD
 import com.mapbox.evsahayak.Charging;
+=======
+>>>>>>> origin/master
 import com.mapbox.geojson.Feature;
 import com.mapbox.geojson.FeatureCollection;
 import com.mapbox.geojson.LineString;
@@ -117,6 +128,7 @@ public class MapAther extends AppCompatActivity implements
 
         // Inflate the layout with the the MapView. Always inflate this after the Mapbox access token is configured.
         setContentView(R.layout.activity_map);
+<<<<<<< HEAD
         Button back = findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -128,6 +140,9 @@ public class MapAther extends AppCompatActivity implements
 
             }
         });
+=======
+
+>>>>>>> origin/master
         // Create a GeoJSON feature collection from the GeoJSON file in the assets folder.
         try {
             getFeatureCollectionFromJson();
@@ -520,7 +535,11 @@ public class MapAther extends AppCompatActivity implements
     private void getFeatureCollectionFromJson() throws IOException {
         try {
             // Use fromJson() method to convert the GeoJSON file into a usable FeatureCollection object
+<<<<<<< HEAD
             featureCollection = FeatureCollection.fromJson(loadGeoJsonFromAsset("ather.geojson"));
+=======
+            featureCollection = FeatureCollection.fromJson(loadGeoJsonFromAsset("list_of_locations.geojson"));
+>>>>>>> origin/master
 
         } catch (Exception exception) {
             Log.e("MapActivity", "getFeatureCollectionFromJson: " + exception);

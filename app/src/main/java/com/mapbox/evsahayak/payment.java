@@ -35,6 +35,7 @@ public class payment extends AppCompatActivity {
         note = findViewById(R.id.txn_note);
         msg = findViewById(R.id.msg);
         pay = findViewById(R.id.payNow);
+<<<<<<< HEAD
         View back = findViewById(R.id.back_pay);
 
         back.setOnClickListener(new View.OnClickListener() {
@@ -47,6 +48,9 @@ public class payment extends AppCompatActivity {
 
             }
         });
+=======
+
+>>>>>>> origin/master
 
         pay.setOnClickListener(new View.OnClickListener() {
             @Override

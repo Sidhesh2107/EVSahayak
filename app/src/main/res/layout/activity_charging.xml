@@ -50,6 +50,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.5" />
+<<<<<<< HEAD
 
     <ImageView
         android:id="@+id/back_charging"
@@ -61,4 +62,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/back" />
+=======
+>>>>>>> origin/master
 </androidx.constraintlayout.widget.ConstraintLayout>

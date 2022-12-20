@@ -20,6 +20,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
+<<<<<<< HEAD
     <ImageView
         android:id="@+id/back_pay"
         android:layout_width="82dp"
@@ -31,6 +32,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/back" />
 
+=======
+>>>>>>> origin/master
     <EditText
         android:id="@+id/upi_id"
         android:layout_width="0dp"
